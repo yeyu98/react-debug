@@ -257,6 +257,7 @@ export function updateContainer(
     onScheduleRoot(container, element);
   }
   const current = container.current;
+  // 计算本次更新的初始时间
   const eventTime = requestEventTime();
   if (__DEV__) {
     // $FlowExpectedError - jest isn't a global, and isn't recognized outside of tests
@@ -265,6 +266,7 @@ export function updateContainer(
       warnIfNotScopedWithMatchingAct(current);
     }
   }
+  // 计算本次更新的优先级
   const lane = requestUpdateLane(current);
 
   if (enableSchedulingProfiler) {
