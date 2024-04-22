@@ -1,7 +1,10 @@
 import * as ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+// import BBB from './BBB';
 import reportWebVitals from './reportWebVitals';
+
+// const App = BBB
 
 ReactDOM.render(
   <App />,
