@@ -25,7 +25,7 @@ function App() {
   // 3. useMemo
   const memoValue = useMemo(() => a + 1, [a]);
   // 4. useCallback
-  const fn = useCallback(() => {
+  const fn = useCallback(() => {  
     console.log(`useCallback：${a}`)
   }, [a])
   // 5. useState
@@ -37,8 +37,8 @@ function App() {
   return (
     <>
       <h1>memoValue：{memoValue}</h1>
-      <button onClick={() => setA(a + 1)}>{a}</button>
-      <button>{b}</button>
+      <button onClick={() => setA(a + 1)}>a:{a}</button>
+      <button>b:{b}</button>
     </>
   );
 }
