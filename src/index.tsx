@@ -15,10 +15,11 @@ import reportWebVitals from './reportWebVitals';
 // );
 
 // NOTE concurrent 模式下涉及Scheduler、时间切片、中断渲染以及恢复，以此作为调试demo
-ReactDOM.createRoot(document.getElementById('root')).render(
-<StrictMode>
-  <App />
- </StrictMode>
+ReactDOM.createRoot(document.getElementById('root'))
+.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
 )
 
 // If you want to start measuring performance in your app, pass a function
