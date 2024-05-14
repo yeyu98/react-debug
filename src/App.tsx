@@ -4,6 +4,7 @@ import { useState, useEffect, useMemo, useCallback } from 'react';
 import './App.css';
 
 function App() {
+  // NOTE 调试fiber构建
   // return (
   //   <div className="App">
   //     <header className="App-header">
@@ -12,6 +13,8 @@ function App() {
   //     </header>
   //   </div>
   // );
+
+  // NOTE 调试hooks
   // 1. useState
   const [a, setA] = useState(1);
   // 2. useEffect
